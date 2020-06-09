@@ -1,0 +1,176 @@
+<div class=" badge-light">
+
+    <!--TABLA DE DIVISAS-->
+    <div class="row col-md-12  justify-content-md-around  ">
+      
+      <div class="row col-md-8 col-sm-12  ">
+        <div class="card ">
+          <table class="table table-responsive text-center  ">
+            <div class="card-header bg-dark text-center conversor">
+              <h3 class="card-title">CONVERSOR DE DIVISAS</h3>
+            </div>
+                <thead> 
+                  <tr> 
+                    <th></th> 
+                    <th>
+                      <img src="assets/divisas/USD.jpg" alt="" width="20px" height="15px">
+                      <br>
+                      USD
+                    </th>
+                    <th>
+                      <img src="assets/divisas/EUR.jpg" alt="" width="20px" height="15px">
+                      <br>
+                      EUR
+                    </th>
+                    <th>
+                      <img src="assets/divisas/GBP.jpg" alt="" width="20px" height="15px">
+                      <br>
+                      GBP
+                    </th>
+                    <th>
+                      <img src="assets/divisas/JPY.jpg" alt="" width="20px" height="15px">
+                      <br>
+                      JPY
+                    </th>
+                    <th>
+                      <img src="assets/divisas/CNY.png" alt="" width="20px" height="15px">
+                      <br>
+                      CNY
+                    </th>
+                    <th>
+                      <img src="assets/divisas/AUD.png" alt="" width="20px" height="15px">
+                      <br>
+                      AUD
+                    </th>
+                    <th>
+                      <img src="assets/divisas/BTC.png" alt="" width="20px" height="20px">
+                      <br>
+                      BTC
+                    </th>
+                    <th>
+                      <img src="assets/divisas/ARS.jpg" alt="" width="20px" height="15px"> 
+                      <br> 
+                      ARS
+                    </th>
+                  </tr> 
+                </thead>
+                <tbody>
+                  <tr> 
+                    <td><img src="assets/divisas/USD.jpg" alt="" width="20px" height="15px"> USD <br> Inverse</td>
+                    <td>1.000000 <br>1.000000</td> 
+                    <td>0.919901 <br>1.087074</td>
+                    <td>0.811469 <br>1.232332</td>
+                    <td>108.9079 <br>0.009182</td>
+                    <td>7.057569 <br>0.617328</td>
+                    <td>1.619886 <br>0.617328</td>
+                    <td>0.000140 <br>7148.757</td>
+                    <td>64.87725 <br>0.015414</td>            
+                  </tr>
+                  <tr> 
+                    <td><img src="assets/divisas/EUR.jpg" alt="" width="20px" height="15px"> EUR <br> Inverse</td>
+                    <td>1.087074 <br>0.919901</td>
+                    <td>1.000000 <br>1.000000</td> 
+                    <td>0.882127 <br>1.133623</td>
+                    <td>118.3910 <br>0.008447</td>
+                    <td>7.672100 <br>0.130342</td>
+                    <td>1.760936 <br>0.567880</td>
+                    <td>0.000152 <br>6576.146</td>
+                    <td>70.52637 <br>0.014179</td>
+                  </tr>
+                  <tr> 
+                    <td><img src="assets/divisas/GBP.jpg" alt="" width="20px" height="15px"> GBP <br> Inverse</td>
+                    <td>1.232332 <br>0.811469</td>
+                    <td>1,133623 <br>0.882127</td>
+                    <td>1.000000 <br>1.000000</td>           
+                    <td>134.2108 <br>0.007451</td>
+                    <td>8.697272 <br>0.114979</td>
+                    <td>1.996238 <br>0.500942</td>
+                    <td>0.000172 <br>5800.997</td>
+                    <td>79.95034 <br>0.012508</td>      
+                  </tr>
+                  <tr>
+                    <td><img src="assets/divisas/RUB.png" alt="" width="20px" height="15px"> RUB <br> Inverse</td>
+                    <td>0.013226 <br>75.61134</td>
+                    <td>0.012166 <br>82.19511</td>
+                    <td>0.010732 <br>93.17830</td>
+                    <td>1.440365 <br>0.694268</td>
+                    <td>0.093340 <br>10.71351</td>
+                    <td>0.021424 <br>46.67696</td>
+                    <td>0.000002 <br>540527.1</td>
+                    <td>0.858036 <br>1.165452</td>
+                  </tr>
+                </tbody>
+          </table>
+        </div>
+      </div>
+    
+      <!--CONVERSOR DE DIVISAS-->
+      <div class="row col-md-4  justify-content-md-start ">
+          
+        <div class="card text-center ">
+            
+            
+            <content class="col-auto d-none d-sm-block text-left"><!-- d-none lo que hace es deparecer la carde donde se pone y d-block lo manda abajo en este caso con sm-->
+                <div class="row col-md-13 card-header bg-dark text-center converso"><!--Aqui empieza el conversor-->
+                  <h3 class="card-title">Conversor de divisas</h3>
+                </div>
+                <form >
+                    <div class="">
+                        <label for="textCantidad">Cantidad:</label>
+                        <input type="text" name="Divisas.cantidad" [(ngModel)]="divisas.cantidad" class="form-group form-control">
+                    </div>
+                    <div class="">
+                        <label for="textDe">De:</label>
+                        <select id="" class="form-group form-control " name="Divisas.desde" [(ngModel)]="divisas.desde">
+                          <option value="ARS">Peso Argentino</option>
+                          <option value="SGD">Dólar Singapurense</option>
+                          <option value="MYR">Ringgit Melayo</option>
+                          <option value="EUR">Euro</option>
+                          <option value="USD">Dólar Estadounidense</option>
+                          <option value="AUD">Dólar Australiano</option>
+                          <option value="JPY">Yen Japones</option>
+                          <option value="HKD">Dólar de Hong Kong</option>
+                          <option value="CAD">Dólar Canadiense</option>
+                          <option value="MXN">Peso Mexicano</option>
+                          <option value="RUB">Rublo Ruso</option>
+                          <option value="GBP">Libra Esterlina</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="textA">A:</label>
+                        <select  id="" class="form-group form-control" name="Divisas.a" [(ngModel)]="divisas.a" >
+                          <option value="ARS">Peso Argentino</option>
+                          <option value="SGD">Dólar Singapurense</option>
+                          <option value="MYR">Ringgit Melayo</option>
+                          <option value="EUR">Euro</option>
+                          <option value="USD">Dólar Estadounidense</option>
+                          <option value="AUD">Dólar Australiano</option>
+                          <option value="JPY">Yen Japones</option>
+                          <option value="HKD">Dólar de Hong Kong</option>
+                          <option value="CAD">Dólar Canadiense</option>
+                          <option value="MXN">Peso Mexicano</option>
+                          <option value="RUB">Rublo Ruso</option>
+                          <option value="GBP">Libra Esterlina</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="idResultado">Resultado:</label>
+                      <input id="idResultado" class="form-group form-control" type="number" name="Divisas.resultado" [(ngModel)]="divisas.resultado">
+                    </div>
+                    <div class="form-group"> 
+                        <button class="btn col-sm-12 btn-dark" (click)="conversion()">Convertir</button>
+                    </div>
+                </form>
+            </content>
+          </div>  
+      </div>
+
+    </div>
+  </div>
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"> </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"> </script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"> </script>

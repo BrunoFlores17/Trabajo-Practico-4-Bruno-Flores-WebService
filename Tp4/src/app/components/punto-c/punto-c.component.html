@@ -1,0 +1,39 @@
+<form class="badge-light">
+    <div class="row form-group">
+        <label for="nombre" class="col-2 col-form-label">Signo</label>
+        <select name="Horoscopo.name" id="categoria" class=" form-group form-control col-10" [(ngModel)]="horoscopo.name">
+            <option value="Capricorn">Capricornio</option>
+            <option value="Aquarius">Aquarius</option>
+            <option value="Pisces">Piscies</option>
+            <option value="Aries">Aries</option>
+            <option value="Taurus">Tauro</option>
+            <option value="Gemini">Geminis</option>
+            <option value="Cancer">Cancer</option>
+            <option value="Leo">Leo</option>
+            <option value="Virgo">Virgo</option>
+            <option value="Libra">Libra</option>
+            <option value="Scorpio">Scorpio</option>
+            <option value="Sagittarius">Sagittarius</option>
+            <option value=""></option>
+        </select>
+    </div>
+    <div class="row form-group">
+        <button type="button" class="btn container col-1 btn-outline-secondary form-control" (click)="mostrarSigno()">Cargar Signo</button>
+    </div>
+</form>
+
+
+
+<div>  
+    <div class="col-12" *ngFor="let item of vector_signos"    >
+        <div class="card h-100">
+            <div class="card-body">
+                <a href="">
+                    <h4><span class="badge badge-dark">Signo:{{item.name}}</span></h4>
+                </a>
+                <p class="card-text">Fecha:{{item.star_date | date: 'dd/MM/yyyy'}} hasta el {{item.end_date}}</p>
+                <!--<p class="card-text">Descripción: <br>{{item.description}}</p>-->
+            </div>
+        </div>
+    </div>
+</div>
